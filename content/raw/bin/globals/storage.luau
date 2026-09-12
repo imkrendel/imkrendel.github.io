@@ -2,7 +2,7 @@ getgenv().Run = getgenv().Run or {}
 local function exec(url) local success, code = pcall(game.HttpGet, game, url) if success and code then local func, err = loadstring(code) if func then func() else warn("Failed to compile script: " .. tostring(err)) end else warn("Failed to load script. Link: " .. tostring(url)) end end
 
 Run.WAESP = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/WA/source.luau") end
-Run.LimbExtender_rewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Hitbox/APPVDEV/source.luau") end
+Run.LimbExtender_rewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Hitbox/AAPVDEV/source.luau") end
 Run.Spin = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Spin.lua") end
 Run.Fly = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/movement/fly.lua") end
 Run.Cframe = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/movement/cframe-speed/source.luau") end
@@ -22,10 +22,10 @@ Run.InfinityYield = function()
 
 
 -- Games
-Run.VDTexRBLX = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/games/violence-district/TexRBLX-script.lua") end
-Run.VDTexRBLXRewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/games/violence-district/TexRBLX-Rewrite.lua") end
-Run.DisableStopEmote = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/games/violence-district/DisableStopEmote.lua") end
-Run.MoonWalk = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/games/violence-district/MoonWalk.lua") end
+Run.VDTexRBLX = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/TexRBLX-script.lua") end
+Run.VDTexRBLXRewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/TexRBLX-Rewrite.lua") end
+Run.DisableStopEmote = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/DisableStopEmote.lua") end
+Run.MoonWalk = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/MoonWalk.lua") end
 
 -- EVADE
 Run.WhakazhiHubX = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/backups/evade/WhakizashiHubX.lua") end
