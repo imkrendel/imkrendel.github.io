@@ -3,9 +3,9 @@ local function exec(url) local success, code = pcall(game.HttpGet, game, url) if
 
 Run.WAESP = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/WA/source.luau") end
 Run.LimbExtender_rewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Hitbox/AAPVDEV/source.luau") end
-Run.Spin = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Spin.lua") end
-Run.Fly = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/movement/fly.lua") end
-Run.Cframe = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/movement/cframe-speed/source.luau") end
+Run.Spin = function() exec("") end
+Run.Fly = function() exec("") end
+Run.Cframe = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/universal/movement/cframe-speed/source.luau") end
 
 Run.Gaze = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/universal/animations/gaze/source.luau") end
 Run.afem = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/universal/animations/AFEM.lua") end

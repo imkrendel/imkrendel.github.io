@@ -9,7 +9,7 @@
      |   | |  (_,_)  |  ||  | \ `'   /|  | \ `'   / \  `-'    /|  (_,_)\  ||  (_.\.' /  \  `-'    / `-'`-'|___  
      |   | |  |      |  ||  |  \    / |  |  \    /   \       / |  |    |  ||       .'    \       /   |        \ 
      '---' '--'      '--'`--'   `'-'  ''-'   `'-'     `'-..-'  '--'    '--''-----'`       `'-..-'    `--------` 
-    CLI Version by imkrendel
+    CLI Version v1.0.1 by imkrendel
     Repack by imkrendel | https://github.com/imkrendel
 ]]
 
@@ -23,7 +23,7 @@ type = nil
 speed = nil
 
 if runType == "cli" then
-	rconsoleprint(`[MoralesCLI] Cframe Speed activated. Speed: {customSpeed}`)
+	rconsoleprint(`[CF-CLI] Cframe Speed activated. Speed: {customSpeed}`)
 	
 	RunService.RenderStepped:Connect(function()
 		local character = LocalPlayer.Character
