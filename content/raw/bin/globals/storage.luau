@@ -1,24 +1,5 @@
 getgenv().Run = getgenv().Run or {}
-local function exec(url)
-    local success, code = pcall(game.HttpGet, game, url)
-    if success and code then
-        print("Response preview from " .. url .. ":\n" .. string.sub(code, 1, 100))
-        
-        if code:find("<!DOCTYPE") or code:find("404") then
-            warn("Файл не найден (404/HTML) по ссылке: " .. url)
-            return
-        end
-
-        local func, err = loadstring(code)
-        if func then
-            func()
-        else
-            warn("Ошибка компиляции: " .. tostring(err))
-        end
-    else
-        warn("Не удалось выполнить HttpGet: " .. tostring(url))
-    end
-end
+local function exec(url) local success, code = pcall(game.HttpGet, game, url) if success and code then local func, err = loadstring(code) if func then func() else warn("Failed to compile script: " .. tostring(err)) end else warn("Failed to load script. Link: " .. tostring(url)) end end
 
 Run.WAESP = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/WA/source.luau") end
 Run.LimbExtender_rewrite = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/combat/Hitbox/AAPVDEV/source.luau") end
@@ -37,6 +18,7 @@ Run.ExecutorBydzenero = function() exec("https://imkrendel.github.io/content/raw
 Run.Executor = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/executor.lua") end
 Run.OldConsoleBywally = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/console.lua") end
 Run.DexByIY = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/dex.lua") end
+
 
 -- Games
 Run.VDTexRBLX = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/TexRBLX-script.lua") end
