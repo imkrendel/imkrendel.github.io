@@ -37,8 +37,6 @@ Run.ExecutorBydzenero = function() exec("https://imkrendel.github.io/content/raw
 Run.Executor = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/executor.lua") end
 Run.OldConsoleBywally = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/console.lua") end
 Run.DexByIY = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/tools/dex.lua") end
-Run.InfinityYield = function() 
-
 
 -- Games
 Run.VDTexRBLX = function() exec("https://imkrendel.github.io/content/raw/bin/scripts/violence-district/TexRBLX-script.lua") end
